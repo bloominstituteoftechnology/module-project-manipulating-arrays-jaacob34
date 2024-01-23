@@ -31,6 +31,19 @@
     // 🧠 There are many ways to solve this, but practice using a for loop to iterate over the array.
     // 🧠 As you have done in the past, declare a variable before you start looping, to accumulate the result.
     function sumNumsFor(nums) {
+      sum = 0
+      
+      for (let i = 0; i < nums.length; i++) {
+        let element = nums[i]
+        if (typeof element === 'number') {
+          if (element === 13) {
+            return "I'm too superstitious!"
+          }
+          sum += element //this is all within the if (typeof) brackets
+        }
+        
+      }
+      return sum
 
     }
 
