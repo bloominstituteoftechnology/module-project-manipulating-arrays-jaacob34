@@ -164,12 +164,14 @@
     function separateAges(arr) {
       let arr1 = []
       let arr2 = []
-      let result = [...arr1, ...arr2]
+      let result = [arr1, arr2]
+
       for (let i = 0; i < arr.length; i++) {
-        if (arr[i] < 25) {
-          arr1.push(arr[i])
+        let age = arr[i]
+        if (age < 21) {
+          arr1.push(age)
         } else {
-          arr2.push(arr[i])
+          arr2.push(age)
         }
       }
       return result
